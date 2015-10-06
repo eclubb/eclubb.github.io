@@ -1,0 +1,5 @@
+app/
+build/
+config.js
+package.json
+deploy.sh
