@@ -1,26 +1,26 @@
 #!/bin/sh
 
 if ! `git status | grep -q 'nothing to commit, working directory clean'` ; then
-	echo 'Save your work first!'
+	echo -e "\\n Save your work first!\n"
 	exit -1
 fi
 
-echo 'Checking out master branch' &&
+echo -e "\\n -> Checking out master branch\n" &&
 git checkout master &&
 
-echo 'Copying build files' &&
+echo -e "\\n -> Copying build files\n" &&
 cp -r build/* . &&
 
 if ! `git status | grep -q 'nothing to commit, working directory clean'` ; then
-	echo 'Committing changes' &&
+	echo -e "\\n -> Committing changes\n" &&
 	git status &&
 	git add . &&
 	git commit -m'Update public site.' &&
 
-	echo 'Deploying site' &&
+	echo -e "\\n -> Deploying site\n" &&
 	git push
 else
-	echo 'Nothing to deploy!'
+	echo -e "\\n -> Nothing to deploy!\n"
 fi
 
 git checkout src
