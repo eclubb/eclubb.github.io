@@ -24,3 +24,15 @@ ul.nav {
 #tlusa-blurb {
   margin-bottom: 30px;
 }
+
+.jumbotron h2 {
+  margin-bottom: 30px;
+}
+
+.jumbotron .panel-body p {
+  font-size: 14px;
+}
+
+.event-details {
+  margin-bottom: 10px;
+}
