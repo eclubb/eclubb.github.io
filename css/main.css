@@ -5,8 +5,12 @@
 .navbar-brand img {
   height: 50px;
   width: 50px;
-  margin-right: 10px;
+  margin: 0 10px 20px 0;
   display: inline;
+}
+
+.navbar-brand p {
+  display: inline-block;
 }
 
 button.navbar-toggle {
@@ -15,4 +19,20 @@ button.navbar-toggle {
 
 ul.nav {
   margin-top: 15px;
+}
+
+#tlusa-blurb {
+  margin-bottom: 30px;
+}
+
+.jumbotron h2 {
+  margin-bottom: 30px;
+}
+
+.jumbotron .panel-body p {
+  font-size: 14px;
+}
+
+.event-details {
+  margin-bottom: 10px;
 }
