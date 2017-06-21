@@ -36,3 +36,7 @@ ul.nav {
 .event-details {
   margin-bottom: 10px;
 }
+
+.important {
+  color: red;
+}
